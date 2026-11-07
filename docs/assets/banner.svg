@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#000000"/><stop offset="0.55" stop-color="#0b0b12"/><stop offset="1" stop-color="#0a2540"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b8860b"/><stop offset="0.5" stop-color="#ffd76a"/><stop offset="1" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0e7fdb" stop-opacity="0"/><stop offset="0.5" stop-color="#0e7fdb"/><stop offset="1" stop-color="#0e7fdb" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#ffffff">
+    <path d="M0 40H1200M0 100H1200M0 160H1200M0 220H1200M0 280H1200"/>
+    <path d="M100 0V320M300 0V320M500 0V320M700 0V320M900 0V320M1100 0V320"/>
+  </g>
+  <rect x="0" y="250" width="1200" height="3" fill="url(#blue)">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <g filter="url(#glow)">
+    <text x="600" y="150" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="104" letter-spacing="22" fill="url(#gold)">AXOM</text>
+  </g>
+  <text x="600" y="198" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="9" fill="#e8e8e8">CAR DEALERSHIP WEBSITE</text>
+  <text x="600" y="236" text-anchor="middle" font-family="Courier New, monospace" font-size="18" fill="#0e7fdb">HTML5  •  CSS3  •  JavaScript</text>
+  <text x="600" y="288" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffd76a">Developed by Syed Muhammad Tayyab</text>
+  <g fill="#ffd76a">
+    <circle cx="120" cy="80" r="3"><animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1060" cy="110" r="3"><animate attributeName="opacity" values="0;1;0" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="250" cy="250" r="2"><animate attributeName="opacity" values="0;1;0" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="960" cy="40" r="2"><animate attributeName="opacity" values="0;1;0" dur="3.6s" repeatCount="indefinite"/></circle>
+  </g>
+  <g transform="translate(70,190)" fill="none" stroke="#0e7fdb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M0 40 L12 14 Q16 6 26 6 H70 Q80 6 86 14 L98 40 Z"/>
+    <circle cx="22" cy="46" r="8"/><circle cx="76" cy="46" r="8"/>
+    <animateTransform attributeName="transform" type="translate" values="70,190;86,190;70,190" dur="5s" repeatCount="indefinite"/>
+  </g>
+</svg>
